@@ -1,3 +1,9 @@
+
+
+<img width="960" alt="2025-05-28 (1)" src="https://github.com/user-attachments/assets/b38c5a05-0fc3-41bf-8bd7-59f356ab4e8c" />
+
+
+
 ## **Lab: High Availability and Disaster Recovery with AWS Serverless Architecture**
 
 ### **Lab Overview**
