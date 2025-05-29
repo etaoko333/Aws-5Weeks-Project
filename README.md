@@ -115,6 +115,21 @@ def lambda_handler(event, context):
 4. Deploy the same functions in the secondary region.
 
 
+
+
+<img width="960" alt="2025-05-27 (6)" src="https://github.com/user-attachments/assets/4f2cbf16-d303-45cd-9ed5-4a1e997455a9" />
+
+
+
+
+
+write_function.py
+
+
+<img width="960" alt="2025-05-27 (7)" src="https://github.com/user-attachments/assets/607de30c-e8ef-447b-926c-b25b082936df" />
+
+
+
 ### **Step 4: Set Up API Gateway in Both Regions**
 Create REST APIs to expose the Lambda functions.
 
@@ -130,6 +145,14 @@ Create REST APIs to expose the Lambda functions.
 3. Deploy the API to a new stage (e.g., `prod`).
 4. Note the API Gateway endpoint URL.
 5. Repeat the same setup in the secondary region.
+
+
+
+
+<img width="960" alt="2025-05-27" src="https://github.com/user-attachments/assets/650d699d-d08d-49c8-9d63-d8024a3dc772" />
+
+
+
 
 ### **Step 5: Create ACM certificates and custom domain for the APIs**
 We need a custom domain for our APIs along with SSL/TLS certificates before we can create the Route 53 records.
@@ -169,6 +192,13 @@ Now that the APIs exist, we’ll create a DNS name (e.g., `api.example.com`) tha
 - **Secondary endpoint**: API Gateway URL for the secondary region.
 - **Health check**: Select the appropriate health checks.
 3. Note the DNS name (e.g., `api.example.com`).
+
+
+
+
+
+<img width="960" alt="2025-05-27 (4)" src="https://github.com/user-attachments/assets/0264ee17-7d89-4932-a7b9-5821231bc47e" />
+
 
 
 ### **Step 7: Create the Frontend Website**
@@ -244,6 +274,13 @@ The frontend will use HTML, Bootstrap for styling, and JavaScript to interact wi
 </body>
 </html>
 ```
+
+
+
+
+<img width="960" alt="2025-05-27 (9)" src="https://github.com/user-attachments/assets/bf0ece69-9a5d-4329-94b4-d753e71325ca" />
+
+
 
 #### Instructions:
 1. Replace `api.example.com` with your Route 53 DNS name.
